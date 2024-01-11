@@ -13,6 +13,6 @@ defmodule AOC.TrebucheteTest do
     7pqrstsixteen
     """
 
-    assert AOC.Trebuchete.trebuchet2(str) != AOC.Trebuchete.trebuchet1(str)
+    refute AOC.Trebuchete.trebuchet2(str) == AOC.Trebuchete.trebuchet1(str)
   end
 end
